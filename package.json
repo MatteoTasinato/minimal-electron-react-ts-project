@@ -1,6 +1,6 @@
 {
-  "name": "minimal-electron-react-js-project",
-  "productName": "minimal-electron-react-js-project",
+  "name": "minimal-electron-react-ts-project",
+  "productName": "minimal-electron-react-ts-project",
   "description": "A minimalistic out-of-the-box Electron project with React and Typescrypt integration.",
   "version": "1.0.0",
   "homepage": "./",
