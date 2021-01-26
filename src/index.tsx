@@ -6,4 +6,4 @@ const root = document.createElement('div')
 root.id = 'root'
 document.body.appendChild(root)
 
-render(<App />, document.getElementById('root'))
+render(<App />, document.querySelector('#root'))
