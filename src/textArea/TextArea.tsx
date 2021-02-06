@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+const FONT_TYPES = ['text-base', 'text-lg', 'text-xl']
+
 export const TextArea = ({ fontSize, setFontSize }) => {
     const [text, setText] = React.useState(undefined)
 
@@ -18,10 +20,9 @@ export const TextArea = ({ fontSize, setFontSize }) => {
 }
 
 const FontSelector = ({ setFontSize }) => {
-    const fontTypes = ['text-base', 'text-lg', 'text-xl']
     return (
         <div>
-            {fontTypes.map((fontType) => (
+            {FONT_TYPES.map((fontType) => (
                 <button
                     onClick={() => {
                         setFontSize(fontType)

@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { spawn } = require('child_process')
 
 const defaultInclude = path.resolve(__dirname, 'src')
-console.log(defaultInclude)
+
 module.exports = {
     entry: './src/index.tsx',
     module: {

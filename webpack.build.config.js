@@ -12,7 +12,28 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    [
+                                        'postcss-preset-env',
+                                        {
+                                            plugins: [
+                                                require('tailwindcss'),
+                                                require('autoprefixer'),
+                                            ],
+                                        },
+                                    ],
+                                ],
+                            },
+                        },
+                    },
+                ],
                 include: defaultInclude,
             },
             {
